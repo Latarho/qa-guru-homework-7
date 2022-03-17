@@ -1,4 +1,8 @@
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -13,6 +17,9 @@ public class SearchTests {
     private static final String REPOSITORY = "Latarho/qa-guru-homework-4";
 
     @Test
+    @Owner("SergPomytkin")
+    @Severity(SeverityLevel.BLOCKER)
+    @Feature("Задачи в репозитории")
     public void listenerTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -30,6 +37,9 @@ public class SearchTests {
     }
 
     @Test
+    @Owner("SergPomytkin")
+    @Severity(SeverityLevel.BLOCKER)
+    @Feature("Задачи в репозитории")
     public void lambdaTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -57,6 +67,9 @@ public class SearchTests {
     }
 
     @Test
+    @Owner("SergPomytkin")
+    @Severity(SeverityLevel.BLOCKER)
+    @Feature("Задачи в репозитории")
     public void stepTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
