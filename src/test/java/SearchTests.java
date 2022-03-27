@@ -80,4 +80,9 @@ public class SearchTests {
         steps.openRepository(REPOSITORY);
         steps.checkIssue();
     }
+
+    @Test
+    public void printSomeTextTest() {
+        System.out.println("Вывод текста в консоли");
+    }
 }
